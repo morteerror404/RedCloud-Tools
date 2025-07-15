@@ -1,71 +1,76 @@
-# Objetivo do repositório
+# RedCloud Tools Installer
 
-`Facilitar a instalação das ferramentas de cloud, sem precisar instalar o Red-Cloud-OS`
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yourusername/redcloud-tools/pulls)
 
-## Ferramentas Disponíveis
+> Um instalador simplificado para ferramentas de segurança em cloud, sem a necessidade de instalar todo o Red-Cloud-OS
 
-### AWS
+## 📦 Instalação
 
-*   [AWSCLI](https://aws.amazon.com/cli/)
-*   [AWS Consoler](https://github.com/redteamoperations/aws-consoler)
-*   [AWS Escalate](https://github.com/nccgroup/aws-escalate)
-*   [CloudCopy](https://github.com/NetSPI/CloudCopy)
-*   [CloudJack](https://github.com/NetSPI/CloudJack)
-*   [CloudMapper](https://github.com/duo-labs/cloudmapper)
-*   [CredKing](https://github.com/NetSPI/CredKing)
-*   [Endgame](https://github.com/salesforce/endgame)
-*   [Pacu](https://github.com/RhinoSecurityLabs/Pacu)
-*   [Redboto](https://github.com/redteamoperations/redboto)
-*   [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
+```bash
+git clone https://github.com/morteerror404/RedCloud-Tools/install_redcloud_tools.sh
+cd redcloud-tools
+chmod +x install_redcloud_tools.sh
+./install_redcloud_tools.sh
+```
 
-### Azure
+## ✨ Recursos
 
-*   [AADCookieSpoof](https://github.com/Gerenios/AADCookieSpoof)
-*   [AADInternals](https://github.com/Gerenios/AADInternals)
-*   [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/)
-*   [AzureAD](https://github.com/Azure/azure-powershell)
-*   [AzureHound](https://github.com/BloodHoundAD/AzureHound)
-*   [BloodHound](https://github.com/BloodHoundAD/BloodHound)
-*   [DCToolbox](https://github.com/NetSPI/DCToolbox)
-*   [MFASweep](https://github.com/dafthack/MFASweep)
-*   [MicroBurst](https://github.com/NetSPI/MicroBurst)
-*   [Microsoft365 devicePhish](https://github.com/NetSPI/Microsoft365-devicePhish)
-*   [MS Graph](https://docs.microsoft.com/en-us/graph/)
-*   [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL)
-*   [ROADtools](https://github.com/dirkjanm/ROADtools)
-*   [TeamFiltration](https://github.com/NetSPI/TeamFiltration)
-*   [TokenTactics](https://github.com/NetSPI/TokenTactics)
+- Instalação automatizada de +50 ferramentas de segurança cloud
+- Organização por provedores (AWS, Azure, GCP, Multi-Cloud)
+- Modo silencioso para automação
+- Verificação de dependências
+- Barra de progresso visual
 
-### GCP
+## 🛠️ Como Usar
 
-*   [Gcloud CLI](https://cloud.google.com/sdk/gcloud)
-*   [GCPBucketBrute](https://github.com/NetSPI/GCPBucketBrute)
-*   [GCP Delegation](https://github.com/NetSPI/GCP-Delegation)
-*   [GCP Enum](https://github.com/NetSPI/GCP-Enum)
-*   [GCP Firewall Enum](https://github.com/NetSPI/GCP-Firewall-Enum)
-*   [GCP IAM Collector](https://github.com/NetSPI/GCP-IAM-Collector)
-*   [GCP IAM Privilege Escalation](https://github.com/NetSPI/GCP-IAM-Privilege-Escalation)
-*   [GCPTokenReuse](https://github.com/NetSPI/GCPTokenReuse)
-*   [GoogleWorkspaceDirectoryDump](https://github.com/NetSPI/GoogleWorkspaceDirectoryDump)
-*   [Hayat](https://github.com/NetSPI/Hayat)
+**Modo interativo:**
+```bash
+./install_redcloud_tools.sh
+```
 
-### Multi Cloud
+**Modo automático (instala tudo silenciosamente):**
+```bash
+./install_redcloud_tools.sh -a -s
+```
 
-*   [Cartography](https://github.com/lyft/cartography)
-*   [CCAT](https://github.com/NetSPI/CCAT)
-*   [CloudBrute](https://github.com/NetSPI/CloudBrute)
-*   [CloudEnum](https://github.com/NetSPI/CloudEnum)
-*   [Cloud Service Enum](https://github.com/NetSPI/Cloud-Service-Enum)
-*   [Evilginx2](https://github.com/kgretzky/evilginx2)
-*   [Gitleaks](https://github.com/zricethezav/gitleaks)
-*   [Impacket](https://github.com/SecureAuthCorp/impacket)
-*   [Leonidas](https://github.com/NetSPI/Leonidas)
-*   [Modlishka](https://github.com/drk1wi/Modlishka)
-*   [Mose](https://github.com/NetSPI/Mose)
-*   [PurplePanda](https://github.com/NetSPI/PurplePanda)
-*   [Responder](https://github.com/lgandx/Responder)
-*   [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
-*   [SkyArk](https://github.com/NetSPI/SkyArk)
-*   [Zphisher](https://github.com/htr-tech/zphisher)
+**Opções disponíveis:**
+```
+-s, --silent    Modo silencioso (sem saída detalhada)
+-a, --all       Instalar todas as ferramentas automaticamente
+-h, --help      Mostrar ajuda
+```
 
+## 🗂️ Ferramentas Disponíveis
 
+### ☁️ AWS (11 ferramentas)
+- `AWSCLI` - Interface de linha de comando oficial da AWS
+- `Pacu` - Framework de exploração de ambientes AWS
+- `CloudMapper` - Mapeamento visual de infraestrutura AWS
+- E mais...
+
+### 🔷 Azure (15 ferramentas)
+- `AzureHound` - Coleta de dados para análise de privilégios
+- `MicroBurst` - Framework de avaliação de segurança Azure
+- `ROADtools` - Ferramentas para interação com Azure AD
+- E mais...
+
+### 📊 GCP (9 ferramentas)
+- `GCPBucketBrute` - Enumeração de buckets no Google Cloud
+- `Hayat` - Framework de avaliação de segurança GCP
+- `GCP-IAM-Collector` - Análise de permissões IAM
+- E mais...
+
+### 🌐 Multi-Cloud (16 ferramentas)
+- `ScoutSuite` - Auditoria de segurança multi-cloud
+- `Impacket` - Coleção de scripts para exploração de redes
+- `Evilginx2` - Framework para phishing avançado
+- E mais...
+
+## 🤝 Contribuição
+Contribuições são bem-vindas! Por favor:
+1. Faça um fork do projeto
+2. Crie sua branch (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
