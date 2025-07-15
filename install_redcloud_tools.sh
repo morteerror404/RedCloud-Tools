@@ -80,27 +80,3 @@ do
             ;;
     esac
 done
-
-# Nota: A modificação do pacman.conf para adicionar repositórios de ferramentas específicas
-# não é diretamente aplicável aqui, pois a maioria dessas ferramentas são repositórios Git
-# ou pacotes Python/Go, não pacotes Arch Linux tradicionais. A instalação seria feita
-# clonando os repositórios e instalando dependências via pip, go get, etc.
-# Se houver um repositório AUR ou customizado para RedCloud-OS, ele precisaria ser adicionado
-# manualmente ou via um helper AUR como 'yay'.
-
-# Exemplo de como adicionar um repositório ao pacman.conf (comentado)
-# sudo cp /etc/pacman.conf /etc/pacman.conf.bak
-# echo "
-# [redcloud-repo]
-# SigLevel = Optional TrustAll
-# Server = http://seurepositorio.com/archlinux/$repo/os/$arch
-#" | sudo tee -a /etc/pacman.conf
-
-# Para instalar via AUR (se as ferramentas estiverem lá)
-# sudo pacman -S --needed git base-devel
-# git clone https://aur.archlinux.org/yay.git
-# cd yay
-# makepkg -si
-# yay -S nome-da-ferramenta
-
-
